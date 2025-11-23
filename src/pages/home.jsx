@@ -5,6 +5,7 @@ import Galaxy from '../components/home/Galaxy'
 import Tokyo from '../components/home/Tokyo'
 import Journey from '../components/home/Journey'
 import VideoFrame from '../components/home/VideoFrame'
+import Token from '../components/home/Token'
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
         <Tokyo />
         <Journey />
         <VideoFrame />
+        <Token />
       </div>
     </>
   )
