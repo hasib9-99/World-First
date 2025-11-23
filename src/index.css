@@ -1,0 +1,83 @@
+@font-face {
+    font-family: Cygun;
+    font-style: normal;
+    font-weight: 200 700;
+    font-display: swap;
+    src: url("../public/assets/fonts/cygun-bold.566253311df71162ce05.woff2") format("woff2");
+}
+@font-face {
+    font-family: ARIAL;
+    font-style: normal;
+    font-weight: 200 700;
+    font-display: swap;
+    src: url("../public/assets/fonts/ARIAL.TTF") format("TTF");
+}
+@import "tailwindcss";
+
+@theme{
+    --font-cygun: 'Cygun', sans-serif;
+    --font-arial: 'ARIAL', sans-serif;
+    --animate-blink: blink 2s linear infinite;
+
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+        transform: translateY(-5px);
+    }
+    10% {
+        opacity: 0.8;
+    }
+    20% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0.8;
+    }
+    40% {
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(-5px);
+    }
+}
+}
+
+.content-wrap{
+    @apply container px-5 md:px-8 mx-auto ;
+}
+.sub-title{
+    @apply font-arial text-white text-lg line-clamp-1;
+}
+.card-title{
+    @apply font-cygun text-white text-2xl md:text-4xl line-clamp-1 opacity-60 hover:opacity-100 text-center;
+}
+.card-discription{
+    @apply font-arial text-white text-sm md:text-lg line-clamp-3 text-center py-5;
+}
+
+.card-overlay::before{
+    margin: 0;
+    content: "";
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    border-radius: 100%;
+    transition: all 0.4s cubic-bezier(0.3, 0, 0.3, 1);
+    -webkit-transition: all 0.4s cubic-bezier(0.3, 0, 0.3, 1);
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    background: #ff36d7;
+    pointer-events: none;
+    filter: blur(95px);
+}
+.card-overlay.active::before{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+}
