@@ -4,6 +4,7 @@ import Hero from '../components/home/Hero'
 import Galaxy from '../components/home/Galaxy'
 import Tokyo from '../components/home/Tokyo'
 import Journey from '../components/home/Journey'
+import VideoFrame from '../components/home/VideoFrame'
 
 const Home = () => {
   return (
@@ -13,7 +14,7 @@ const Home = () => {
         <Galaxy />
         <Tokyo />
         <Journey />
-        <Journey />
+        <VideoFrame />
       </div>
     </>
   )

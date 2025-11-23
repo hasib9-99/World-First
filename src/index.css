@@ -17,6 +17,7 @@
 @theme{
     --font-cygun: 'Cygun', sans-serif;
     --font-arial: 'ARIAL', sans-serif;
+    --container: 1318px;
     --animate-blink: blink 2s linear infinite;
     --animate-btn-anim1: btn-anim1 1s linear infinite;
     --animate-btn-anim2: btn-anim2 1s linear 0.25s infinite;
