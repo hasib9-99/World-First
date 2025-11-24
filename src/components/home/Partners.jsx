@@ -16,7 +16,7 @@ const Partners = ({ data }) => {
                             <img
                                 src={partner.img}
                                 alt={partner.alt}
-                                className="min-h-[140px] max-h-[140px] object-contain"
+                                className="min-h-[140px] max-h-[140px] w-full object-contain opacity-70"
                             />
                         </div>
                     ))}

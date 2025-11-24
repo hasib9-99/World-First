@@ -8,12 +8,13 @@ import Journey from '../components/home/Journey'
 import VideoFrame from '../components/home/VideoFrame'
 import Token from '../components/home/Token'
 import Partners from '../components/home/Partners'
+import News from '../components/home/News'
 
 const Home = () => {
   return (
     <>
       <Hero />
-      <div className='' style={{ backgroundImage: `url(${backgound})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <div className='' style={{ backgroundImage: `url(${backgound})`, backgroundSize: 'contain', backgroundPosition: '0' }}>
         <Galaxy />
         <Tokyo />
         <Journey />
@@ -21,6 +22,7 @@ const Home = () => {
         <Token />
         <Partners data={PARTNERS_DATA} />
         <Partners data={INVESTORS_DATA} />
+        <News />
       </div>
     </>
   )
