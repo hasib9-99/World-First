@@ -92,7 +92,7 @@
 }
 
 .content-wrap{
-    @apply container px-5 md:px-8 mx-auto ;
+    @apply w-full max-w-[1318px] px-5 md:px-8 mx-auto ;
 }
 .sub-title{
     @apply font-arial text-white text-lg uppercase;
