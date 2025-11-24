@@ -23,8 +23,19 @@
     --animate-btn-anim2: btn-anim2 1s linear 0.25s infinite;
     --animate-btn-anim3: btn-anim3 1s linear 0.5s infinite;
     --animate-btn-anim4: btn-anim4 1s linear 0.75s infinite;
+    --animate-rotate: onovoRotateText 10s linear infinite;;
 
 
+
+
+@keyframes onovoRotateText {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
 @keyframes blink {
     0% {
         opacity: 1;

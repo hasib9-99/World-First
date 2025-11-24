@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 import IconTwitter from './Icons/IconTwitter';
 import IconTelegram from './Icons/IconTelegram';
