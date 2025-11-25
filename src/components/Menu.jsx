@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 const Menu = ({ Menus }) => {
+    const defaultDilay = 300
     const [openIndex, setOpenIndex] = useState(null); // tracks which menu is open
 
     const toggleMenu = (index) => {
@@ -8,18 +9,18 @@ const Menu = ({ Menus }) => {
     };
 
     return (
-        <div>
-            <ul>
+        <div className='header_menu-items '>
+            <ul className='px-8'>
                 {Menus.map((menu, index) => (
-                    <li key={index} className="py-4 border-b border-white/30 flex gap-4 flex-wrap">
-                        <div className='text-white text-lg'>{index + 1} </div>
+                    <li key={index} style={{ transitionDelay: `${(index * 100) + defaultDilay}ms` }} className="lg:pl-20 pl-6 relative lg:my-5 my-3 opacity-0 transition-normal duration-500">
+                        <div className='text-[#494949] text-sm font-arial font-bold absolute lg:top-4 left-0'>0{index + 1}.</div>
                         <div
                             className="flex justify-between items-center cursor-pointer"
                             onClick={() => toggleMenu(index)}
                         >
-                            <a className="text-white text-2xl" href={menu.link}>{menu.name}</a>
+                            <a className="text-[#aeaeae] lg:text-[45px] text-2xl leading-8 font-semibold font-arial lg:leading-[45px] inline-block relative menu-item-amination" href={menu.link}>{menu.name}</a>
                             {menu.social_links && (
-                                <span className="text-white text-xl">
+                                <span className="text-white text-lg">
                                     {openIndex === index ? '▲' : '▼'} {/* optional arrow */}
                                 </span>
                             )}
@@ -30,9 +31,9 @@ const Menu = ({ Menus }) => {
                                 {menu.social_links.map((social, idx) => {
                                     const Icon = social.icon;
                                     return (
-                                        <li key={idx} className="py-2 flex items-center gap-2">
-                                            <Icon className="w-6 h-6 text-white" />
-                                            <a href={social.url} className="text-white text-xl">
+                                        <li key={idx} className="menu-item-amination relative flex gap-3 items-center my-3">
+                                            <span className='text-2xl text-[#C588F9]'><Icon /></span>
+                                            <a href={social.url} className="lg:text-3xl text-xl font-arial font-semibold text-[#aeaeae] leading-[45px]">
                                                 {social.name}
                                             </a>
                                         </li>
