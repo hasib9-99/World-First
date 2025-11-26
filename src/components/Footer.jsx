@@ -25,12 +25,12 @@ const Footer = () => {
                         </div>
                         <div className='flex items-center justify-start gap-4 my-4'>
                             <a href="https://projects.assuredefi.com/project/me3"><img className='h-10' src='../../public/assets/images/footer1.svg' alt="footer1" type='svg' /></a>
-                            <a href="https://github.com/0xGuard-com/audit-reports/blob/master/Me3/Me3.pdf"><img className='h-10' src='../../public/assets/images/footer2.webp' alt="footer2" type='pdf' /></a>
-                            <a href="https://bscscan.com/token/0x42b4daa9210102707373f4618852f926a4150277"><img className='h-10' src='../../public/assets/images/footer3.svg' alt="footer3" type='svg' /></a>
+                            <a href="https://github.com/0xGuard-com/audit-reports/blob/master/Me3/Me3.pdf"><img className='h-10' src='/public/assets/images/footer2.webp' alt="footer2" type='pdf' /></a>
+                            <a href="https://bscscan.com/token/0x42b4daa9210102707373f4618852f926a4150277"><img className='h-10' src='/public/assets/images/footer3.svg' alt="footer3" type='svg' /></a>
                         </div>
                     </div>
                     <div className='w-full md:w-4/12'>
-                        <div className='flex items-center gap-3'>
+                        <div className='flex items-center lg:justify-end gap-3'>
                             <a className='text-[#C588F9] text-2xl lg:text-4xl' href="https://x.com/Me3Labs"><IconTwitter /></a>
                             <a className='text-[#C588F9] text-2xl lg:text-4xl' href="https://t.me/Me3Official"><IconTelegram /></a>
                             <a className='text-[#C588F9] text-2xl lg:text-4xl' href="https://discord.com/invite/me3labs"><IconDiscord /></a>
@@ -39,7 +39,7 @@ const Footer = () => {
                             <a className='text-[#C588F9] text-2xl lg:text-4xl' href="https://www.youtube.com/@Me3Labs"><IconYoutube /></a>
                             <a className='text-[#C588F9] text-2xl lg:text-4xl' href="mailto:info@me3.io"><IconMail /></a>
                         </div>
-                        <p className='sub-title pt-3'>© 2024 ME3 LABS INC | ALL RIGHTS RESERVED</p>
+                        <p className='sub-title pt-3 lg:text-right'>© 2024 ME3 LABS INC | ALL RIGHTS RESERVED</p>
                     </div>
                 </div>
                 <div className='bg-[url("../../public/assets/images/footer-bar.svg")] bg-no-repeat bg-contain w-full h-2.5 md:mt-16 mt-8 mb-8'>
