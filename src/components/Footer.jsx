@@ -16,7 +16,7 @@ const Footer = () => {
                 <div className='flex flex-col md:flex-row text-white justify-between w-full gap-6'>
                     <div className='w-full md:w-8/12'>
                         <div className='flex flex-row flex-wrap items-center justify-start gap-3'>
-                            <img className='w-[140px] block' src="../../public/assets/images/logo.webp" alt="logo" />
+                            <a href="/"><img className='w-[140px] block' src="../../public/assets/images/logo.webp" alt="logo" type='webp' /></a>
                             <div className='flex flex-row flex-wrap items-center justify-start gap-3'>
                                 <a className='hover:underline text-arial text-sm leading-6' href="https://help.me3.io/en/articles/9245378-terms-of-use">Terms of Use</a>
                                 <a className='hover:underline text-arial text-sm leading-6' href="https://help.me3.io/en/articles/9245363-privacy-policy">Privacy Policy</a>
@@ -24,9 +24,9 @@ const Footer = () => {
                             </div>
                         </div>
                         <div className='flex items-center justify-start gap-4 my-4'>
-                            <a href="https://projects.assuredefi.com/project/me3"><img className='h-10' src='../../public/assets/images/footer1.svg' alt="footer1" /></a>
-                            <a href="https://github.com/0xGuard-com/audit-reports/blob/master/Me3/Me3.pdf"><img className='h-10' src='../../public/assets/images/footer2.webp' alt="footer2" /></a>
-                            <a href="https://bscscan.com/token/0x42b4daa9210102707373f4618852f926a4150277"><img className='h-10' src='../../public/assets/images/footer3.svg' alt="footer3" /></a>
+                            <a href="https://projects.assuredefi.com/project/me3"><img className='h-10' src='../../public/assets/images/footer1.svg' alt="footer1" type='svg' /></a>
+                            <a href="https://github.com/0xGuard-com/audit-reports/blob/master/Me3/Me3.pdf"><img className='h-10' src='../../public/assets/images/footer2.webp' alt="footer2" type='pdf' /></a>
+                            <a href="https://bscscan.com/token/0x42b4daa9210102707373f4618852f926a4150277"><img className='h-10' src='../../public/assets/images/footer3.svg' alt="footer3" type='svg' /></a>
                         </div>
                     </div>
                     <div className='w-full md:w-4/12'>
